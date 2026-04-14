@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6bd423a888544f34eb2d90828451c832
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SEBANG Gothic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6f3d70fe106f2bb4d8557289219c5c7e, type: 3}
+  customCharacters: 32-16, 405987
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

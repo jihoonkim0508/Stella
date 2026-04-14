@@ -8,3 +8,14 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+*.cs text eol=lf
+*.shader text eol=lf
+*.txt text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.prefab text eol=lf
+*.unity text eol=lf
+Assets/TextMesh/[[:space:]]Pro/Fonts/SEBANG/[[:space:]]Gothic/[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextMesh[[:space:]]Pro/Fonts/SEBANG[[:space:]]Gothic[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextMesh[[:space:]]Pro/FontsSEBANG[[:space:]]Gothic[[:space:]]Bold[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TextMesh[[:space:]]Pro/Fonts/SEBANG[[:space:]]Gothic[[:space:]]Bold[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
