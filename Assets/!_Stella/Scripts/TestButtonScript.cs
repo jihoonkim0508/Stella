@@ -18,9 +18,5 @@ public class TestButtonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mouse.current != null)
-            Debug.Log("마우스 인식됨: " + Mouse.current.position.ReadValue());
-        else
-            Debug.Log("마우스 없음!");
     }
 }
