@@ -1,0 +1,1177 @@
+fileFormatVersion: 2
+guid: 5af2077672f314049b4b1b9c5b8fe755
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 1
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 9dbc2d0f6f7e98149b63814d547a757a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: "\uC804\uAC08 Scorpio"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2536
+      width: 72
+      height: 76
+    spriteID: d6db83900ce49cf4a94bd2299c431139
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2536}
+    spritePosition: {x: 1689, y: 798}
+  - name: Icon_Scorpio
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 4
+      width: 100
+      height: 100
+    spriteID: e38ca83e2441d0c4e8dba329a80ada1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 4}
+    spritePosition: {x: 1795, y: 796}
+  - name: "\uC0AC\uC218 Sagittarius"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2180
+      width: 106
+      height: 76
+    spriteID: c3b076d182b9cb542873170c564c84ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2180}
+    spritePosition: {x: 1655, y: 646}
+  - name: Icon_Sagittarius
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 112
+      width: 100
+      height: 100
+    spriteID: 1f6b21da271f060459716b7dcbf5c772
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 112}
+    spritePosition: {x: 1795, y: 643}
+  - name: "\uC5FC\uC18C Capricorn"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2356
+      width: 90
+      height: 76
+    spriteID: 0d89cd88e4551204996981b7a439d384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2356}
+    spritePosition: {x: 1670, y: 495}
+  - name: Icon_Capricorn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 220
+      width: 100
+      height: 100
+    spriteID: e1b2d311305cd724389df18adb37060d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 220}
+    spritePosition: {x: 1795, y: 490}
+  - name: "\uBB3C\uBCD1 Aquarius"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2446
+      width: 86
+      height: 76
+    spriteID: 97abaa8223c34c84c96003715118be1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2446}
+    spritePosition: {x: 1675, y: 344}
+  - name: Icon_Aquarius
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 328
+      width: 100
+      height: 100
+    spriteID: 20e6683dfc5407b41ae5174a7a0072c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 328}
+    spritePosition: {x: 1795, y: 337}
+  - name: "\uBB3C\uACE0\uAE30 Pisces"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 2180
+      width: 108
+      height: 72
+    spriteID: 0b8bb26b5c385fd4f8032de9d738857b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 2180}
+    spritePosition: {x: 1653, y: 196}
+  - name: Icon_Pisces
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 436
+      width: 100
+      height: 100
+    spriteID: 96065d8cc59289e46821677dd1536d01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 436}
+    spritePosition: {x: 1795, y: 184}
+  - name: "\uD669\uC18C Taurus"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2892
+      width: 72
+      height: 69
+    spriteID: 44ef7eac8bce67d4b9ef034b30baccfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2892}
+    spritePosition: {x: 154, y: 882}
+  - name: Icon_Taurus
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 544
+      width: 100
+      height: 100
+    spriteID: 0fe05a18ff97211419876b1efd47c27d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 544}
+    spritePosition: {x: 25, y: 872}
+  - name: "\uC30D\uB465\uC774 Gemini"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2270
+      width: 105
+      height: 72
+    spriteID: cff8e0716774ae54f8fabdde6b9c45d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2270}
+    spritePosition: {x: 154, y: 725}
+  - name: Icon_Gemini
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 652
+      width: 100
+      height: 100
+    spriteID: 7f833460922833c4898817653ef929ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 652}
+    spritePosition: {x: 25, y: 719}
+  - name: "\uAC8C Cancer"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2975
+      width: 66
+      height: 72
+    spriteID: 0ac722290a689d74d804bec0ebef8288
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2975}
+    spritePosition: {x: 154, y: 574}
+  - name: Icon_Cancer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 760
+      width: 100
+      height: 100
+    spriteID: ae3e11838f0bc2d4a939c95184d89224
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 760}
+    spritePosition: {x: 25, y: 566}
+  - name: "\uC0AC\uC790 Leo"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2718
+      width: 72
+      height: 72
+    spriteID: 48b32142822827e47b7101e3a8346730
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2718}
+    spritePosition: {x: 154, y: 423}
+  - name: Icon_Leo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 868
+      width: 100
+      height: 100
+    spriteID: fb6ba0de5308dd74aa4673617ca06444
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 868}
+    spritePosition: {x: 25, y: 413}
+  - name: "\uCC98\uB140 Virgo"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2626
+      width: 69
+      height: 78
+    spriteID: e2cfee120bda3e34a90ccf1dfa7d14b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2626}
+    spritePosition: {x: 154, y: 267}
+  - name: Icon_Virgo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 976
+      width: 100
+      height: 100
+    spriteID: 8f372e0f75216254f9e24e15bc8a16a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 976}
+    spritePosition: {x: 25, y: 260}
+  - name: "\uCC9C\uCE6D Libra"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 2804
+      width: 70
+      height: 74
+    spriteID: ec2e8c142d207cb4cad0f3099f2da328
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 2804}
+    spritePosition: {x: 154, y: 113}
+  - name: Icon_Libra
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 100
+      height: 100
+    spriteID: 026cf4a2eac59e244add172fb2cfdd84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 25, y: 107}
+  - name: Aries
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 2180
+      width: 121
+      height: 42
+    spriteID: d7f89d4ac3b558845bbbe2aaeeafaded
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 2180}
+    spritePosition: {x: 896, y: 975}
+  - name: Circle
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1051
+      height: 1051
+    spriteID: bf430b3aae9ba324ba1382e746afa986
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 360, y: 0}
+  - name: "\uBC30\uACBD"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 51de71af2ea9b924eac587951f18ede6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Synergy_Check
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 3546e56872bd5b64fabcbb6bddd194d3
+    layerID: 251
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 'Synergy_List '
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 14fd66d016f811048895755a6c3a1fc2
+    layerID: 250
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Right
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 07de47df45b10904994bd69f7a18c9bf
+    layerID: 249
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Scorpio
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: b238edbb9ee99754290a5041713a77d0
+    layerID: 248
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uC804\uAC08 Scorpio"
+    spriteName: "\uC804\uAC08 Scorpio"
+    isGroup: 0
+    parentIndex: 3
+    spriteID: d6db83900ce49cf4a94bd2299c431139
+    layerID: 247
+    mosaicPosition: {x: 112, y: 2536}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Scorpio
+    spriteName: Icon_Scorpio
+    isGroup: 0
+    parentIndex: 3
+    spriteID: e38ca83e2441d0c4e8dba329a80ada1c
+    layerID: 246
+    mosaicPosition: {x: 1932, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sagittarius
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: 0aa2768d627667d429eabf2fd17ae01e
+    layerID: 244
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uC0AC\uC218 Sagittarius"
+    spriteName: "\uC0AC\uC218 Sagittarius"
+    isGroup: 0
+    parentIndex: 6
+    spriteID: c3b076d182b9cb542873170c564c84ea
+    layerID: 243
+    mosaicPosition: {x: 112, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Sagittarius
+    spriteName: Icon_Sagittarius
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 1f6b21da271f060459716b7dcbf5c772
+    layerID: 242
+    mosaicPosition: {x: 1932, y: 112}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capricorn
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: 56e569154fca69d438e0149edb6ab7b4
+    layerID: 240
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uC5FC\uC18C Capricorn"
+    spriteName: "\uC5FC\uC18C Capricorn"
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 0d89cd88e4551204996981b7a439d384
+    layerID: 239
+    mosaicPosition: {x: 112, y: 2356}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Capricorn
+    spriteName: Icon_Capricorn
+    isGroup: 0
+    parentIndex: 9
+    spriteID: e1b2d311305cd724389df18adb37060d
+    layerID: 238
+    mosaicPosition: {x: 1932, y: 220}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Aquarius
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: d52744adc4e81714fb8973f85fc34aa5
+    layerID: 236
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uBB3C\uBCD1 Aquarius"
+    spriteName: "\uBB3C\uBCD1 Aquarius"
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 97abaa8223c34c84c96003715118be1a
+    layerID: 235
+    mosaicPosition: {x: 112, y: 2446}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Aquarius
+    spriteName: Icon_Aquarius
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 20e6683dfc5407b41ae5174a7a0072c1
+    layerID: 234
+    mosaicPosition: {x: 1932, y: 328}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pisces
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: cedae1b81a6f5c5458fde26d0d05ca11
+    layerID: 232
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uBB3C\uACE0\uAE30 Pisces"
+    spriteName: "\uBB3C\uACE0\uAE30 Pisces"
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 0b8bb26b5c385fd4f8032de9d738857b
+    layerID: 231
+    mosaicPosition: {x: 231, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Pisces
+    spriteName: Icon_Pisces
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 96065d8cc59289e46821677dd1536d01
+    layerID: 230
+    mosaicPosition: {x: 1932, y: 436}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Left
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 97f8e840fc1cee34cb06cd5c6d2fc8b2
+    layerID: 227
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Taurus
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: cefe7358093a2c24782e08b2da330c3a
+    layerID: 226
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uD669\uC18C Taurus"
+    spriteName: "\uD669\uC18C Taurus"
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 44ef7eac8bce67d4b9ef034b30baccfe
+    layerID: 225
+    mosaicPosition: {x: 112, y: 2892}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Taurus
+    spriteName: Icon_Taurus
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 0fe05a18ff97211419876b1efd47c27d
+    layerID: 224
+    mosaicPosition: {x: 1932, y: 544}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Gemini
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: 63929cd606aeeae438cb74df1b58d9d1
+    layerID: 222
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uC30D\uB465\uC774 Gemini"
+    spriteName: "\uC30D\uB465\uC774 Gemini"
+    isGroup: 0
+    parentIndex: 22
+    spriteID: cff8e0716774ae54f8fabdde6b9c45d4
+    layerID: 221
+    mosaicPosition: {x: 112, y: 2270}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Gemini
+    spriteName: Icon_Gemini
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 7f833460922833c4898817653ef929ad
+    layerID: 220
+    mosaicPosition: {x: 1932, y: 652}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Cancer
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: 1a247e2cc23fcf24188cf5da928f1d65
+    layerID: 218
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uAC8C Cancer"
+    spriteName: "\uAC8C Cancer"
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 0ac722290a689d74d804bec0ebef8288
+    layerID: 217
+    mosaicPosition: {x: 112, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Cancer
+    spriteName: Icon_Cancer
+    isGroup: 0
+    parentIndex: 25
+    spriteID: ae3e11838f0bc2d4a939c95184d89224
+    layerID: 216
+    mosaicPosition: {x: 1932, y: 760}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leo
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: 783e99149bff0d441b77028432a91b28
+    layerID: 214
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uC0AC\uC790 Leo"
+    spriteName: "\uC0AC\uC790 Leo"
+    isGroup: 0
+    parentIndex: 28
+    spriteID: 48b32142822827e47b7101e3a8346730
+    layerID: 213
+    mosaicPosition: {x: 112, y: 2718}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Leo
+    spriteName: Icon_Leo
+    isGroup: 0
+    parentIndex: 28
+    spriteID: fb6ba0de5308dd74aa4673617ca06444
+    layerID: 212
+    mosaicPosition: {x: 1932, y: 868}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Virgo
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: 8fec8fb3bba8ece4fb66d2d97fdbfb06
+    layerID: 210
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uCC98\uB140 Virgo"
+    spriteName: "\uCC98\uB140 Virgo"
+    isGroup: 0
+    parentIndex: 31
+    spriteID: e2cfee120bda3e34a90ccf1dfa7d14b9
+    layerID: 209
+    mosaicPosition: {x: 112, y: 2626}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Virgo
+    spriteName: Icon_Virgo
+    isGroup: 0
+    parentIndex: 31
+    spriteID: 8f372e0f75216254f9e24e15bc8a16a6
+    layerID: 208
+    mosaicPosition: {x: 1932, y: 976}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Libra
+    spriteName: 
+    isGroup: 1
+    parentIndex: 18
+    spriteID: 15b3638de32749f40abcb2de0672f540
+    layerID: 206
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\uCC9C\uCE6D Libra"
+    spriteName: "\uCC9C\uCE6D Libra"
+    isGroup: 0
+    parentIndex: 34
+    spriteID: ec2e8c142d207cb4cad0f3099f2da328
+    layerID: 205
+    mosaicPosition: {x: 112, y: 2804}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Icon_Libra
+    spriteName: Icon_Libra
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 026cf4a2eac59e244add172fb2cfdd84
+    layerID: 204
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Synergy
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: bf1d9965719d2a5429d684b3263ee165
+    layerID: 126
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Aries
+    spriteName: Aries
+    isGroup: 0
+    parentIndex: 37
+    spriteID: d7f89d4ac3b558845bbbe2aaeeafaded
+    layerID: 136
+    mosaicPosition: {x: 352, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Circle
+    spriteName: Circle
+    isGroup: 0
+    parentIndex: 37
+    spriteID: bf430b3aae9ba324ba1382e746afa986
+    layerID: 118
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\uBC30\uACBD"
+    spriteName: "\uBC30\uACBD"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 51de71af2ea9b924eac587951f18ede6
+    layerID: 1
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 639118053528656497
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
