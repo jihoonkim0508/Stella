@@ -1,0 +1,661 @@
+fileFormatVersion: 2
+guid: 1b35b08303128894488a2a6cacac8c34
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1200
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: fbb3d2d617c434e44b17b30becf1b198
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: SelectTheme
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1216
+      y: 1092
+      width: 343
+      height: 78
+    spriteID: 58adfa408fe564848b7da0d4cf12c254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1216, y: 1092}
+    spritePosition: {x: 784, y: 951}
+  - name: Clickable_Life
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1967
+      width: 295
+      height: 866
+    spriteID: c2fcf328bb47c5146b4e211fc873c417
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1967}
+    spritePosition: {x: 110, y: 46}
+  - name: Non-Clickable_Life
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2841
+      width: 295
+      height: 866
+    spriteID: ad5e4be988b0e86479972d81ed832570
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2841}
+    spritePosition: {x: 110, y: 46}
+  - name: Clickable_Civilization
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 1092
+      width: 295
+      height: 866
+    spriteID: e9be02ab5965e814c986277fd659b123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 1092}
+    spritePosition: {x: 461, y: 46}
+  - name: Non-Clickable_Civilization
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 1966
+      width: 295
+      height: 866
+    spriteID: e030c4e3017098d4789e22269b85069b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 1966}
+    spritePosition: {x: 461, y: 46}
+  - name: Clickable_World
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 2840
+      width: 295
+      height: 866
+    spriteID: 952ebb71b673ac94da412aa0e8f85bcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 2840}
+    spritePosition: {x: 815, y: 46}
+  - name: Non-Clickable_World
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 1092
+      width: 295
+      height: 866
+    spriteID: 67822ab7a43474241bb8625366168f83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 1092}
+    spritePosition: {x: 815, y: 46}
+  - name: Clickable_Stella
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 1966
+      width: 295
+      height: 866
+    spriteID: 14f9192e35e25004281e6e2bfcf0cc1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 1966}
+    spritePosition: {x: 1164, y: 46}
+  - name: Non-Clickable_Stella
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 610
+      y: 2840
+      width: 295
+      height: 866
+    spriteID: 15d8f22c1185a654a81bab3d6a8c3718
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 610, y: 2840}
+    spritePosition: {x: 1164, y: 46}
+  - name: Clickable_Aries
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 295
+      height: 867
+    spriteID: aff9c69785b9c294c95e20304db1b36f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 1517, y: 46}
+  - name: Non-Cliclkable_Aries
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 913
+      y: 1092
+      width: 295
+      height: 866
+    spriteID: 4ac836725ba9fc64ebae077dbfdb19dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 913, y: 1092}
+    spritePosition: {x: 1517, y: 46}
+  - name: "\uBC30\uACBD"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 2df0609d9dc09d646ad118ff7d7df86c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Select_Theme
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 7b6ff4907fe92bd4793cf09ea62f2e64
+    layerID: 373
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: SelectTheme
+    spriteName: SelectTheme
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 58adfa408fe564848b7da0d4cf12c254
+    layerID: 402
+    mosaicPosition: {x: 1216, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Collapse_Life
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 7e4b5a282eb62be49808a563b4c9d094
+    layerID: 401
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Clickable_Life
+    spriteName: Clickable_Life
+    isGroup: 0
+    parentIndex: 2
+    spriteID: c2fcf328bb47c5146b4e211fc873c417
+    layerID: 657
+    mosaicPosition: {x: 4, y: 1967}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Non-Clickable_Life
+    spriteName: Non-Clickable_Life
+    isGroup: 0
+    parentIndex: 2
+    spriteID: ad5e4be988b0e86479972d81ed832570
+    layerID: 664
+    mosaicPosition: {x: 4, y: 2841}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Collapse_Civilization
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: eadc1db67bd4aa0409ef394fa5411c93
+    layerID: 396
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Clickable_Civilization
+    spriteName: Clickable_Civilization
+    isGroup: 0
+    parentIndex: 5
+    spriteID: e9be02ab5965e814c986277fd659b123
+    layerID: 641
+    mosaicPosition: {x: 307, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Non-Clickable_Civilization
+    spriteName: Non-Clickable_Civilization
+    isGroup: 0
+    parentIndex: 5
+    spriteID: e030c4e3017098d4789e22269b85069b
+    layerID: 648
+    mosaicPosition: {x: 307, y: 1966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Collapse_World
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 16fbe59b8ec318a49a9cdbf03c89704c
+    layerID: 391
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Clickable_World
+    spriteName: Clickable_World
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 952ebb71b673ac94da412aa0e8f85bcd
+    layerID: 635
+    mosaicPosition: {x: 307, y: 2840}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Non-Clickable_World
+    spriteName: Non-Clickable_World
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 67822ab7a43474241bb8625366168f83
+    layerID: 633
+    mosaicPosition: {x: 610, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Collapse_Stella
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 9559b7abc5e139f43b93a99dc4175af3
+    layerID: 384
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Clickable_Stella
+    spriteName: Clickable_Stella
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 14f9192e35e25004281e6e2bfcf0cc1b
+    layerID: 625
+    mosaicPosition: {x: 610, y: 1966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Non-Clickable_Stella
+    spriteName: Non-Clickable_Stella
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 15d8f22c1185a654a81bab3d6a8c3718
+    layerID: 627
+    mosaicPosition: {x: 610, y: 2840}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Aries
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 17c65137eb08ae44ea38f75ef71c94b3
+    layerID: 376
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Clickable_Aries
+    spriteName: Clickable_Aries
+    isGroup: 0
+    parentIndex: 14
+    spriteID: aff9c69785b9c294c95e20304db1b36f
+    layerID: 686
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Non-Cliclkable_Aries
+    spriteName: Non-Cliclkable_Aries
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 4ac836725ba9fc64ebae077dbfdb19dc
+    layerID: 688
+    mosaicPosition: {x: 913, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\uBC30\uACBD"
+    spriteName: "\uBC30\uACBD"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2df0609d9dc09d646ad118ff7d7df86c
+    layerID: 1
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 639117358865492298
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
