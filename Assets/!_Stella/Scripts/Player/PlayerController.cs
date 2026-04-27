@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         Rotate();
     }
 
+
     private void FixedUpdate()
     {
         // 대쉬 중이 아닐 때만 일반 이동 물리 로직 실행
@@ -133,5 +134,22 @@ public class PlayerController : MonoBehaviour
         {
             isGround = true;
         }
+    }
+
+    //
+
+    [SerializeField] private float hp;
+
+    public void TakeDamage(float dmg)
+    {
+        hp -= dmg;
+
+        if (hp <= 0)
+            Die();
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player Dead");
     }
 }
