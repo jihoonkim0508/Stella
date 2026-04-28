@@ -9,9 +9,8 @@ public class UiManger : MonoBehaviour
     public Image parentImage;
 
     [Header("이동할 버튼")]
-    public RectTransform buttonA;
-    public RectTransform buttonB;
-
+    public RectTransform button;
+    
     [Header("페이드 시간")]
     public float childFadeDuration;
     public float parentFadeDuration;
@@ -31,8 +30,8 @@ public class UiManger : MonoBehaviour
         // 버튼 이동 먼저 시작 (자식 Fade 시작과 동시에)
         float moveDuration = childFadeDuration + btn_up;
 
-        StartCoroutine(MoveTop(buttonA, buttonMoveDistance, moveDuration));
-        StartCoroutine(MoveTop(buttonB, buttonMoveDistance, moveDuration));
+        StartCoroutine(MoveTop(button, buttonMoveDistance, moveDuration));
+       
 
         // 자식 Fade
         yield return StartCoroutine(FadeImage(childImage, childFadeDuration));
