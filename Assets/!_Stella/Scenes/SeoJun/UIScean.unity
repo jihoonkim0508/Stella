@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 1011703132}
   - component: {fileID: 1011703134}
   - component: {fileID: 1011703135}
+  - component: {fileID: 1011703136}
   m_Layer: 0
   m_Name: UiMnager
   m_TagString: Untagged
@@ -465,10 +466,16 @@ MonoBehaviour:
   - {fileID: 7400631806365693593}
   - {fileID: 6509473845015239546}
   - {fileID: 4885879286462514503}
+  nonClickableItems:
+  - {fileID: 8512085417473415476}
+  - {fileID: 7886622210240984117}
+  - {fileID: 6923872019727180263}
+  - {fileID: 8331111167954394915}
+  - {fileID: 6291574672220713731}
   moveY: -50
   modeDuration: 1.5
   itemFadeDuration: 0.5
-  itemDelay: 0.4
+  itemDelay: 0.2
   themeSwitch: {fileID: 1011703135}
 --- !u!114 &1011703135
 MonoBehaviour:
@@ -489,7 +496,70 @@ MonoBehaviour:
   - {fileID: 3394136696391112658}
   - {fileID: 3536335669060031572}
   durationPerItem: 0.3
-  delayBetween: 0.05
+  delayBetween: 1
+--- !u!114 &1011703136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011703131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086d7a14ae110ce40a244a67d8f198bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSelectEffect
+  clickableButtons:
+  - {fileID: 1236202391852389184}
+  - {fileID: 2752753185687462723}
+  - {fileID: 7804424477474168388}
+  - {fileID: 7286559844094764712}
+  - {fileID: 4511762097957298659}
+  clickableGroups:
+  - {fileID: 8816527618280734347}
+  - {fileID: 3536335669060031573}
+  - {fileID: 7804424477474168389}
+  - {fileID: 8965528826847294206}
+  - {fileID: 7523684447275412542}
+  nonClickableRects:
+  - {fileID: 6283540953632579392}
+  - {fileID: 5355357420650440240}
+  - {fileID: 2404026043202910184}
+  - {fileID: 8331111167954394914}
+  - {fileID: 6291574672220713730}
+  nonClickableGroups:
+  - {fileID: 8512085417473415476}
+  - {fileID: 7886622210240984117}
+  - {fileID: 6923872019727180263}
+  - {fileID: 8331111167954394915}
+  - {fileID: 6291574672220713731}
+  moveY: -100
+  selectedMoveY: 10
+  duration: 1
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1143936054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1230,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1971180540047177269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011703136}
+        m_TargetAssemblyTypeName: UIButtonSelectEffect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &442202317602682121
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1327,7 +1409,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3449062911631072547}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011703136}
+        m_TargetAssemblyTypeName: UIButtonSelectEffect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1567340531125105010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1433,7 @@ GameObject:
   - component: {fileID: 8331111167954394914}
   - component: {fileID: 670365426552682150}
   - component: {fileID: 3766488433580068850}
+  - component: {fileID: 8331111167954394915}
   m_Layer: 5
   m_Name: Non-Clickable_Stella
   m_TagString: Untagged
@@ -1522,7 +1617,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2926455006139575338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011703136}
+        m_TargetAssemblyTypeName: UIButtonSelectEffect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2539239371497946903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1641,7 @@ GameObject:
   - component: {fileID: 6291574672220713730}
   - component: {fileID: 5020881111020187120}
   - component: {fileID: 1677594545055317440}
+  - component: {fileID: 6291574672220713731}
   m_Layer: 5
   m_Name: Non-Clickable_Aries
   m_TagString: Untagged
@@ -2075,6 +2183,7 @@ GameObject:
   - component: {fileID: 7523684447275412541}
   - component: {fileID: 5805151199540543067}
   - component: {fileID: 7452076877213061674}
+  - component: {fileID: 7523684447275412542}
   m_Layer: 5
   m_Name: Clickable_Aries
   m_TagString: Untagged
@@ -2148,6 +2257,7 @@ GameObject:
   - component: {fileID: 6973345318876324675}
   - component: {fileID: 2622985714185907154}
   - component: {fileID: 8816527618280734346}
+  - component: {fileID: 8816527618280734347}
   m_Layer: 5
   m_Name: Clickable_Life
   m_TagString: Untagged
@@ -2237,6 +2347,7 @@ GameObject:
   - component: {fileID: 3341815518355346815}
   - component: {fileID: 3449062911631072547}
   - component: {fileID: 1565920111613177215}
+  - component: {fileID: 3536335669060031573}
   m_Layer: 5
   m_Name: Clickable_Civilization
   m_TagString: Untagged
@@ -2244,6 +2355,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!225 &3536335669060031573
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3536335669060031572}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3689366375262835033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2378,7 @@ GameObject:
   - component: {fileID: 2404026043202910184}
   - component: {fileID: 6824565225826104941}
   - component: {fileID: 6923872019727180262}
+  - component: {fileID: 6923872019727180263}
   m_Layer: 5
   m_Name: Non-Clickable_World
   m_TagString: Untagged
@@ -2396,6 +2520,7 @@ GameObject:
   - component: {fileID: 442202317602682121}
   - component: {fileID: 2926455006139575338}
   - component: {fileID: 2510625508969995878}
+  - component: {fileID: 7804424477474168389}
   m_Layer: 5
   m_Name: Clickable_World
   m_TagString: Untagged
@@ -2459,6 +2584,7 @@ GameObject:
   - component: {fileID: 6283540953632579392}
   - component: {fileID: 8512085417473415475}
   - component: {fileID: 6132739682933578322}
+  - component: {fileID: 8512085417473415476}
   m_Layer: 5
   m_Name: Non-Clickable_Life
   m_TagString: Untagged
@@ -2787,6 +2913,7 @@ GameObject:
   - component: {fileID: 5355357420650440240}
   - component: {fileID: 3255016048805572765}
   - component: {fileID: 7886622210240984116}
+  - component: {fileID: 7886622210240984117}
   m_Layer: 5
   m_Name: Non-Clickable_Civilization
   m_TagString: Untagged
@@ -2930,6 +3057,18 @@ RectTransform:
   m_AnchoredPosition: {x: 702.5, y: -60.5}
   m_SizeDelta: {x: 296.5, y: 867}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &6291574672220713731
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2539239371497946903}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6346649867345867240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3304,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &6923872019727180263
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3689366375262835033}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!222 &6973345318876324675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3426,14 +3577,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestButtonScript, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 1011703136}
+        m_TargetAssemblyTypeName: UIButtonSelectEffect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3472,6 +3623,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3319499859711030640}
   m_CullTransparentMesh: 1
+--- !u!225 &7523684447275412542
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3319499859711030640}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7719978711760976178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,6 +3765,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 295, y: 867}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &7804424477474168389
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3808176296103067654}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &7886622210240984116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,6 +3807,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &7886622210240984117
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420706795643529432}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7941552466120496237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +3875,18 @@ RectTransform:
   m_AnchoredPosition: {x: 349.6, y: -60.5}
   m_SizeDelta: {x: 296.5, y: 867}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &8331111167954394915
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567340531125105010}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!222 &8512085417473415475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3696,6 +3895,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4029636901235025775}
   m_CullTransparentMesh: 1
+--- !u!225 &8512085417473415476
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029636901235025775}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &8816527618280734346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3740,10 +3951,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestButtonScript, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 1011703136}
+        m_TargetAssemblyTypeName: UIButtonSelectEffect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3752,6 +3963,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!225 &8816527618280734347
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3394136696391112658}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8945347557449030862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,6 +4024,7 @@ GameObject:
   - component: {fileID: 3375542895568672588}
   - component: {fileID: 1971180540047177269}
   - component: {fileID: 142073882009410724}
+  - component: {fileID: 8965528826847294206}
   m_Layer: 5
   m_Name: Clickable_Stella
   m_TagString: Untagged
@@ -3808,6 +4032,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!225 &8965528826847294206
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965528826847294205}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!222 &8980819821052464919
 CanvasRenderer:
   m_ObjectHideFlags: 0

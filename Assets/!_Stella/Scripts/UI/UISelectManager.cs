@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class UISelectManager : MonoBehaviour
 {
-    [Header("Mode (현재 UI 전체)")]
-    public CanvasGroup modeGroup;          // CanvasGroup 필수
-    public RectTransform modeRoot;         // 이동 대상
+    [Header("Mode")]
+    public CanvasGroup modeGroup;
+    public RectTransform modeRoot;
 
-    [Header("Theme (다음 UI)")]
-    public List<CanvasGroup> themeItems;   // 순차 등장할 UI들
+    [Header("Theme (부모)")]
+    public List<CanvasGroup> themeItems;
+
+    [Header("NonClickable 내부 아이템")]
+    public List<CanvasGroup> nonClickableItems; // 자식들 따로 넣기
 
     [Header("설정")]
     public float moveY = -50f;
@@ -21,8 +24,7 @@ public class UISelectManager : MonoBehaviour
 
     private bool isPlaying = false;
 
-    public ThemeSwitch themeSwitch; // 추가
-
+    public ThemeSwitch themeSwitch;
 
     public void OnClick()
     {
@@ -50,25 +52,42 @@ public class UISelectManager : MonoBehaviour
             yield return null;
         }
 
-        modeRoot.anchoredPosition = endPos;
-        modeGroup.alpha = 0f;
         modeGroup.gameObject.SetActive(false);
 
-        // Theme 초기화
+        // 부모 초기화
         foreach (var item in themeItems)
         {
             item.alpha = 0f;
-            item.gameObject.SetActive(true);
+            item.gameObject.SetActive(false);
         }
 
-        // Theme 순차 등장
+        // 자식 초기화
+        foreach (var item in nonClickableItems)
+        {
+            item.alpha = 0f;
+            item.gameObject.SetActive(false);
+        }
+
+        // 부모 순차 등장
         foreach (var item in themeItems)
         {
+            item.gameObject.SetActive(true);
             yield return StartCoroutine(FadeIn(item, itemFadeDuration));
+
+            // NonClickable_Theme일 때만 자식 실행
+            if (item.name.Contains("Non-Clickable"))
+            {
+                foreach (var child in nonClickableItems)
+                {
+                    child.gameObject.SetActive(true);
+                    yield return StartCoroutine(FadeIn(child, itemFadeDuration));
+                    yield return new WaitForSeconds(itemDelay);
+                }
+            }
+
             yield return new WaitForSeconds(itemDelay);
         }
 
-        // ⭐ 여기서 연결
         if (themeSwitch != null)
             themeSwitch.StartSwitch();
 

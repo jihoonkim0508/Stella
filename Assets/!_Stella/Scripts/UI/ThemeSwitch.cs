@@ -11,8 +11,8 @@ public class ThemeSwitch : MonoBehaviour
     public List<GameObject> clickableObjects;
 
     [Header("설정")]
-    public float durationPerItem = 0.15f; // 한 개당 전환 시간
-    public float delayBetween = 0.05f;    // 다음으로 넘어가는 간격
+    public float durationPerItem; // 한 개당 전환 시간
+    public float delayBetween;    // 다음으로 넘어가는 간격
 
     private List<CanvasGroup> nonClickableGroups = new List<CanvasGroup>();
     private List<CanvasGroup> clickableGroups = new List<CanvasGroup>();
