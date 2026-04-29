@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class UiManger : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class UiManger : MonoBehaviour
 
     [Header("이동할 버튼")]
     public RectTransform button;
-    
+
     [Header("페이드 시간")]
     public float childFadeDuration;
     public float parentFadeDuration;
@@ -19,6 +20,18 @@ public class UiManger : MonoBehaviour
     public float buttonMoveDistance = 100f;
     public float buttonMoveDuration;
     public float btn_up; //모드선택 버튼 올라오는 시간
+
+    public TMP_Text infintytitle;
+    public TMP_Text infinty;
+
+    public string infintystring;
+    bool infintybool = false; //첫 클 조건
+
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.A)) infintybool = true;
+    }
 
     public void StartFadeOut()
     {
@@ -31,7 +44,7 @@ public class UiManger : MonoBehaviour
         float moveDuration = childFadeDuration + btn_up;
 
         StartCoroutine(MoveTop(button, buttonMoveDistance, moveDuration));
-       
+
 
         // 자식 Fade
         yield return StartCoroutine(FadeImage(childImage, childFadeDuration));
@@ -63,6 +76,11 @@ public class UiManger : MonoBehaviour
 
     IEnumerator MoveTop(RectTransform target, float distance, float duration)
     {
+        if (infintybool)
+        {
+            infintytitle.text = "Infinty";
+            infinty.text = infintystring;
+        }
         Vector2 startPos = target.anchoredPosition;
         Vector2 endPos = startPos + new Vector2(0, distance);
 

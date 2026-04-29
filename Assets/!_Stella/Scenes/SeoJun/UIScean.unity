@@ -431,8 +431,12 @@ MonoBehaviour:
   childFadeDuration: 2
   parentFadeDuration: 2
   buttonMoveDistance: 100
-  buttonMoveDuration: 0.2
+  buttonMoveDuration: 0
   btn_up: 1.2
+  infintytitle: {fileID: 3790055544376605425}
+  infinty: {fileID: 6449574365972310497}
+  infintystring: "\uC778\uD53C\uB2C8\uD2F0 \uC124\uBA85\uC774 \uB4E4\uC5B4\uAC08
+    \uC608\uC815\uC785\uB2C8\uB2E4."
 --- !u!4 &1011703133
 Transform:
   m_ObjectHideFlags: 0
@@ -2436,7 +2440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Infinity
+  m_text: ???
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d00f244100716d240a070d59a539fe21, type: 2}
   m_sharedMaterial: {fileID: -6277367930484872492, guid: d00f244100716d240a070d59a539fe21, type: 2}
@@ -3107,8 +3111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC774\uACF3\uC5D0\uB294 \uBB34\uD55C \uBAA8\uB4DC\uC5D0 \uB300\uD55C
-    \uC124\uBA85\uC774 \uB4E4\uC5B4\uAC08 \uC608\uC815\uC785\uB2C8\uB2E4."
+  m_text: ???
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c88170bfda577eb47802cca036194ccf, type: 2}
   m_sharedMaterial: {fileID: 4979412465918416134, guid: c88170bfda577eb47802cca036194ccf, type: 2}
