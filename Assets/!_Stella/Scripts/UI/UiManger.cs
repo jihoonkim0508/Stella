@@ -26,20 +26,26 @@ public class UiManger : MonoBehaviour
 
     public string infintystring;
     bool infintybool = false; //첫 클 조건
+    bool oneclick = false;
 
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)) infintybool = true;
+        if (Input.GetKeyDown(KeyCode.A)) infintybool = true;
     }
 
     public void StartFadeOut()
     {
-        StartCoroutine(FadeSequence());
+        if (!oneclick)
+        {
+            StartCoroutine(FadeSequence());
+        }
+        
     }
 
     IEnumerator FadeSequence()
     {
+        oneclick = true;
         // 버튼 이동 먼저 시작 (자식 Fade 시작과 동시에)
         float moveDuration = childFadeDuration + btn_up;
 

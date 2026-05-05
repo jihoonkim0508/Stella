@@ -22,7 +22,7 @@ public class UISelectManager : MonoBehaviour
     public float itemFadeDuration = 0.25f;
     public float itemDelay = 0.1f;
 
-    private bool isPlaying = false;
+    public static bool isPlaying = false;
 
     public ThemeSwitch themeSwitch;
 

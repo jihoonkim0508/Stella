@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using System;
 
 public class ButtonMoveDown : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -39,35 +40,42 @@ public class ButtonMoveDown : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             selectOriginPos = selectObject.anchoredPosition;
             selectObject.gameObject.SetActive(false);
         }
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        MoveTo(originTargetPos + new Vector2(0, moveY),
-               originSelfPos + new Vector2(0, selfMoveY));
-
-        if (selectObject != null)
+        if (!UISelectManager.isPlaying)
         {
-            selectObject.gameObject.SetActive(true);
+            MoveTo(originTargetPos + new Vector2(0, moveY),
+                   originSelfPos + new Vector2(0, selfMoveY));
 
-            if (shakeCoroutine != null)
-                StopCoroutine(shakeCoroutine);
+            if (selectObject != null)
+            {
+                selectObject.gameObject.SetActive(true);
 
-            shakeCoroutine = StartCoroutine(ShakeX());
+                if (shakeCoroutine != null)
+                    StopCoroutine(shakeCoroutine);
+
+                shakeCoroutine = StartCoroutine(ShakeX());
+            }
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        MoveTo(originTargetPos, originSelfPos);
-
-        if (selectObject != null)
+        if (!UISelectManager.isPlaying)
         {
-            if (shakeCoroutine != null)
-                StopCoroutine(shakeCoroutine);
+            MoveTo(originTargetPos, originSelfPos);
 
-            selectObject.anchoredPosition = selectOriginPos;
-            selectObject.gameObject.SetActive(false);
+            if (selectObject != null)
+            {
+                if (shakeCoroutine != null)
+                    StopCoroutine(shakeCoroutine);
+
+                selectObject.anchoredPosition = selectOriginPos;
+                selectObject.gameObject.SetActive(false);
+            }
         }
     }
 
