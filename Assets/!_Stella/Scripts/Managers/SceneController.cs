@@ -1,15 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
+/// <summary>
+/// 씬 매니저
+/// LoadScene(string s)를 통해서 씬 로드
+/// </summary>
 public class SceneController : MonoBehaviour
 {
     #region Singleton
     public static SceneController Instance { get; private set; }
-    #endregion
-    
-    // 이전 씬 기록용
-    private Stack<string> sceneHistory = new Stack<string>();
 
     private void Awake()
     {
@@ -22,11 +23,18 @@ public class SceneController : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    /// <summary>
-    /// 비동기 씬 로드
-    /// </summary>
+    #endregion
+    
+    private Stack<string> sceneHistory = new Stack<string>();
+
     public void LoadScene(string sceneName)
     {
+        if (string.IsNullOrWhiteSpace(sceneName))
+        {
+            Debug.LogWarning("[SceneController] Scene name is null or empty. Cannot load scene.");
+            return;
+        }
+
         string currentScene = SceneManager.GetActiveScene().name;
 
         if (currentScene != sceneName)
@@ -36,30 +44,22 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    private System.Collections.IEnumerator LoadSceneCoroutine(string sceneName)
+    private IEnumerator LoadSceneCoroutine(string sceneName)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 
         while (!operation.isDone)
         {
-            // 필요하면 여기서 로딩 UI 업데이트 가능
-            Debug.Log($"로딩 진행률: {operation.progress}");
+            Debug.Log($"[SceneController] Loading Progress: {operation.progress}");
             yield return null;
         }
     }
 
-    /// <summary>
-    /// 현재 씬 다시 로드
-    /// </summary>
     public void ReloadCurrentScene()
     {
-        string currentScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentScene);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    /// <summary>
-    /// 이전 씬으로 복귀
-    /// </summary>
     public void LoadPreviousScene()
     {
         if (sceneHistory.Count > 0)
@@ -69,16 +69,13 @@ public class SceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("이전 씬 기록이 없습니다.");
+            Debug.LogWarning("[SceneController] No previous scene in history to load.");
         }
     }
 
-    /// <summary>
-    /// 게임 종료
-    /// </summary>
     public void QuitGame()
     {
-        Debug.Log("게임 종료");
+        Debug.Log("[SceneController] Quitting game.");
         Application.Quit();
     }
 }

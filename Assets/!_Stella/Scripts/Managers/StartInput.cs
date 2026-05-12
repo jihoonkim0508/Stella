@@ -7,7 +7,16 @@ public class StartInput : MonoBehaviour
     {
         if(Input.anyKeyDown)
         {
-            SceneController.Instance.LoadScene(nextSceneName);
+            GameFlowManager.EnsureExists().ResetRun();
+
+            if (SceneController.Instance != null)
+            {
+                SceneController.Instance.LoadScene(nextSceneName);
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
+            }
         }
     }
 }

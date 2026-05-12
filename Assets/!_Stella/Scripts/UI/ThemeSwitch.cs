@@ -16,6 +16,7 @@ public class ThemeSwitch : MonoBehaviour
 
     private List<CanvasGroup> nonClickableGroups = new List<CanvasGroup>();
     private List<CanvasGroup> clickableGroups = new List<CanvasGroup>();
+    private bool isSwitching;
 
     void Start()
     {
@@ -41,11 +42,25 @@ public class ThemeSwitch : MonoBehaviour
 
     public void StartSwitch()
     {
-        StartCoroutine(SwitchSequential());
+        if (!isSwitching)
+        {
+            StartCoroutine(SwitchSequential());
+        }
+    }
+
+    public void SelectThemeAndEnterRestRoom(string themeName)
+    {
+        GameFlowManager.EnsureExists().SelectTheme(themeName);
+    }
+
+    public void SelectThemeAndEnterRestRoom()
+    {
+        SelectThemeAndEnterRestRoom(string.Empty);
     }
 
     IEnumerator SwitchSequential()
     {
+        isSwitching = true;
         int count = Mathf.Min(nonClickableGroups.Count, clickableGroups.Count);
 
         for (int i = 0; i < count; i++)
@@ -57,6 +72,8 @@ public class ThemeSwitch : MonoBehaviour
 
             yield return new WaitForSeconds(delayBetween);
         }
+
+        isSwitching = false;
     }
 
     IEnumerator SwitchOne(CanvasGroup off, CanvasGroup on)

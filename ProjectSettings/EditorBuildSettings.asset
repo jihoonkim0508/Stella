@@ -12,11 +12,14 @@ EditorBuildSettings:
     path: Assets/!_Stella/Scenes/Lobby.unity
     guid: 0fd70eaa3ea6c5e49998e9801c256cd1
   - enabled: 1
-    path: Assets/!_Stella/Scenes/Dungeons/01_Taurus.unity
-    guid: b7665e3d6aeb90f4d8b3daacaf2ff9ed
+    path: Assets/!_Stella/Scenes/RestRoom.unity
+    guid: 90a24858963acb844956baa64b59e0df
   - enabled: 1
     path: Assets/!_Stella/Scenes/Dungeons/Battle.unity
     guid: 437708105b3adec46ad51a877ecb7fcf
+  - enabled: 1
+    path: Assets/!_Stella/Scenes/Dungeons/Boss.unity
+    guid: 2eb40a468cafeb34288478e3d27ac562
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9c07ff7e3fd91f248ac16ea5a9a9fcf6, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
