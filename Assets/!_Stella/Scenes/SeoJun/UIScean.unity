@@ -480,7 +480,6 @@ MonoBehaviour:
   modeDuration: 1.5
   itemFadeDuration: 0.5
   itemDelay: 0.2
-  isPlaying: 0
   themeSwitch: {fileID: 1011703135}
 --- !u!114 &1011703135
 MonoBehaviour:
@@ -565,6 +564,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  nextSceneName: InGame
+  sceneLoadDelay: 0.3
 --- !u!1 &1143936054
 GameObject:
   m_ObjectHideFlags: 0
