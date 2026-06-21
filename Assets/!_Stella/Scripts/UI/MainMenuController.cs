@@ -7,7 +7,7 @@ using UnityEngine.UI;
 /// </summary>
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private Button ingameButton;
+    [SerializeField] private Button startButton;
     [SerializeField] private Button characterSelectButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button quitButton;
@@ -21,9 +21,9 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        if (ingameButton != null)
+        if (startButton != null)
         {
-            ingameButton.onClick.AddListener(() => SceneManager.LoadScene("Lobby"));
+            startButton.onClick.AddListener(() => SceneManager.LoadScene("Lobby"));
         }
 
         if (characterSelectButton != null)
