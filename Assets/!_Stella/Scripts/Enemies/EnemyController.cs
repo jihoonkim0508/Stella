@@ -16,10 +16,19 @@ public class EnemyController : MonoBehaviour
 
     private Transform player;
     private Health health;
+    private StageRoomController room;
     private float nextAttackTime;
 
     public bool IsBoss => isBoss;
     public CharacterId BossId => bossId;
+
+    /// <summary>
+    /// 씬에 배치된 방 컨트롤러를 직접 연결해 런타임 검색을 줄입니다.
+    /// </summary>
+    public void SetRoom(StageRoomController stageRoom)
+    {
+        room = stageRoom;
+    }
 
     /// <summary>
     /// 체력 이벤트와 플레이어 대상을 준비합니다.
@@ -71,6 +80,8 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public void Configure(EnemyKind kind)
     {
+        EnsureHealth();
+
         switch (kind)
         {
             case EnemyKind.Melee:
@@ -100,6 +111,8 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public void ConfigureBoss(CharacterId id)
     {
+        EnsureHealth();
+
         isBoss = true;
         bossId = id;
         health.Configure(180, 3);
@@ -130,13 +143,23 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        StageRoomController room = FindFirstObjectByType<StageRoomController>();
         if (room != null)
         {
             room.NotifyEnemyDefeated(this);
         }
 
         Destroy(gameObject);
+    }
+
+    /// <summary>
+    /// 에디터 프리팹 생성처럼 Awake 전 설정되는 경우에도 Health 참조를 보장합니다.
+    /// </summary>
+    private void EnsureHealth()
+    {
+        if (health == null)
+        {
+            health = GetComponent<Health>();
+        }
     }
 }
 

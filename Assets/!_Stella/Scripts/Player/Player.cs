@@ -143,7 +143,7 @@ public class Player : MonoBehaviour
 
             if (keyboard.escapeKey.wasPressedThisFrame)
             {
-                RuntimeSceneBootstrap.TogglePause();
+                PauseMenuController.TogglePause();
             }
         }
 

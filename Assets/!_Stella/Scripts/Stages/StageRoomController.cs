@@ -1,41 +1,52 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /// <summary>
-/// 현재 방의 적 수와 포탈 활성화 조건을 관리합니다.
+/// 현재 방의 적 처치 상태와 포탈 활성 조건을 관리합니다.
 /// </summary>
 public class StageRoomController : MonoBehaviour
 {
     [SerializeField] private StagePortal portal;
-
-    private readonly List<EnemyController> enemies = new();
+    [SerializeField] private List<EnemyController> enemies = new();
+    [SerializeField] private bool clearOnStart;
 
     public StagePortal Portal => portal;
     public int RemainingEnemies => enemies.Count;
 
     /// <summary>
-    /// 씬 타입에 맞춰 즉시 클리어 방인지 전투 방인지 결정합니다.
+    /// 씬에 배치된 적 목록을 정리하고 즉시 클리어 방이면 포탈을 엽니다.
     /// </summary>
     private void Start()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "EventStage" || sceneName == "BreakRoom")
+        enemies.RemoveAll(enemy => enemy == null);
+
+        foreach (EnemyController enemy in enemies)
+        {
+            enemy.SetRoom(this);
+        }
+
+        if (clearOnStart || enemies.Count == 0)
         {
             ActivatePortal();
         }
     }
 
     /// <summary>
-    /// 스폰된 적을 클리어 조건에 등록합니다.
+    /// 스폰되거나 배치된 적을 이 방의 클리어 조건으로 등록합니다.
     /// </summary>
     public void RegisterEnemy(EnemyController enemy)
     {
+        if (enemy == null || enemies.Contains(enemy))
+        {
+            return;
+        }
+
         enemies.Add(enemy);
+        enemy.SetRoom(this);
     }
 
     /// <summary>
-    /// 적 처치 후 남은 적이 없으면 포탈을 엽니다.
+    /// 적이 처치되면 남은 수를 갱신하고 보스 또는 방 클리어 처리를 합니다.
     /// </summary>
     public void NotifyEnemyDefeated(EnemyController enemy)
     {
@@ -64,7 +75,7 @@ public class StageRoomController : MonoBehaviour
     }
 
     /// <summary>
-    /// 런타임 생성 포탈을 방 컨트롤러에 연결합니다.
+    /// 씬 또는 프리팹에서 포탈 참조를 연결합니다.
     /// </summary>
     public void SetPortal(StagePortal stagePortal)
     {

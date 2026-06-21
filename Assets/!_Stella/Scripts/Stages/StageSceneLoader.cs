@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// 스테이지 타입에 맞는 씬을 로드합니다.
+/// 현재 스테이지 타입에 맞는 씬을 로드합니다.
 /// </summary>
 public class StageSceneLoader : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class StageSceneLoader : MonoBehaviour
     [SerializeField] private string resultSceneName = "Result";
 
     /// <summary>
-    /// 씬 이동 전역 로더를 유지합니다.
+    /// 씬에 배치된 GameRoot의 로더를 싱글턴으로 유지합니다.
     /// </summary>
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class StageSceneLoader : MonoBehaviour
     }
 
     /// <summary>
-    /// 테스트에서 오브젝트를 제거할 때 싱글턴 참조를 정리합니다.
+    /// 삭제되는 로더가 현재 싱글턴이면 참조를 정리합니다.
     /// </summary>
     private void OnDestroy()
     {
@@ -41,11 +41,15 @@ public class StageSceneLoader : MonoBehaviour
     }
 
     /// <summary>
-    /// 현재 스테이지 씬을 로드합니다.
+    /// 현재 진행 상태의 방 타입에 맞는 씬을 로드합니다.
     /// </summary>
     public void LoadCurrentStage()
     {
-        EnsureProgress();
+        if (!HasProgress())
+        {
+            return;
+        }
+
         if (StageProgress.Instance.IsFinished())
         {
             SceneManager.LoadScene(resultSceneName);
@@ -56,17 +60,21 @@ public class StageSceneLoader : MonoBehaviour
     }
 
     /// <summary>
-    /// 다음 스테이지로 진행하고 씬을 로드합니다.
+    /// 다음 방으로 진행한 뒤 해당 씬을 로드합니다.
     /// </summary>
     public void LoadNextStage()
     {
-        EnsureProgress();
+        if (!HasProgress())
+        {
+            return;
+        }
+
         StageProgress.Instance.MoveNext();
         LoadCurrentStage();
     }
 
     /// <summary>
-    /// 스테이지 타입에 맞는 씬을 로드합니다.
+    /// 스테이지 타입별 씬 이름으로 이동합니다.
     /// </summary>
     private void Load(StageType type)
     {
@@ -88,16 +96,16 @@ public class StageSceneLoader : MonoBehaviour
     }
 
     /// <summary>
-    /// 테스트나 빈 씬에서 진행 오브젝트가 없으면 즉시 생성합니다.
+    /// 씬에 배치되어야 하는 진행 싱글턴이 준비됐는지 확인합니다.
     /// </summary>
-    private static void EnsureProgress()
+    private static bool HasProgress()
     {
         if (StageProgress.Instance != null)
         {
-            return;
+            return true;
         }
 
-        GameObject progressObject = new("StageProgress");
-        progressObject.AddComponent<StageProgress>().StartTheme(StageTheme.Theme1);
+        Debug.LogError("StageProgress가 없습니다. 각 씬의 _Systems 아래 GameRoot 프리팹을 배치해야 합니다.");
+        return false;
     }
 }
