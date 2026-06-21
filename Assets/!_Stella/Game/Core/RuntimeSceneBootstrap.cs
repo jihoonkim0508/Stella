@@ -55,6 +55,9 @@ public class RuntimeSceneBootstrap : MonoBehaviour
             case "Start":
                 bootstrap.BuildStartScene();
                 break;
+            case "Lobby":
+                bootstrap.BuildLobbyScene();
+                break;
             case "BattleStage":
                 bootstrap.BuildStageScene(StageType.Battle);
                 break;
@@ -131,9 +134,30 @@ public class RuntimeSceneBootstrap : MonoBehaviour
         Canvas canvas = CreateCanvas("StartCanvas");
         GameObject menu = CreatePanel(canvas.transform, "MainMenu");
         CreateTitle(menu.transform, "Stella");
-        CreateButton(menu.transform, "Game Start", () => ShowCharacterSelect(canvas, menu));
+        CreateButton(menu.transform, "Ingame", () => SceneManager.LoadScene("Lobby"));
+        CreateButton(menu.transform, "Character Select", () => ShowCharacterSelect(canvas, menu));
         CreateButton(menu.transform, "Settings", () => ShowSettings(canvas, menu));
         CreateButton(menu.transform, "Quit", Application.Quit);
+    }
+
+    /// <summary>
+    /// 해금된 테마 문을 배치한 인게임 로비를 생성합니다.
+    /// </summary>
+    private void BuildLobbyScene()
+    {
+        ClearRuntimeObjects();
+        EnsureLight();
+        CreateLobbyFloor();
+        CreatePlayer();
+        BuildLobbyHud();
+
+        SaveData save = GameSession.Instance.SaveData;
+        for (int themeNumber = 1; themeNumber <= 5; themeNumber++)
+        {
+            bool unlocked = save.unlockedThemes.Contains(themeNumber);
+            float x = (themeNumber - 3) * 3.2f;
+            CreateThemeDoor(themeNumber, unlocked, new Vector3(x, 1.5f, 8f));
+        }
     }
 
     /// <summary>
@@ -151,9 +175,10 @@ public class RuntimeSceneBootstrap : MonoBehaviour
             bool unlocked = save.unlockedCharacters.Contains(id);
             Button button = CreateButton(panel.transform, unlocked ? CharacterCatalog.GetDisplayName(id) : $"{CharacterCatalog.GetDisplayName(id)} (Locked)", () =>
             {
-                GameSession.Instance.StartRun(id);
-                StageProgress.Instance.StartTheme(StageTheme.Theme1);
-                StageSceneLoader.Instance.LoadCurrentStage();
+                save.selectedCharacter = id;
+                GameSession.Instance.SaveService.Save();
+                Destroy(panel);
+                previous.SetActive(true);
             });
             button.interactable = unlocked;
         }
@@ -428,6 +453,53 @@ public class RuntimeSceneBootstrap : MonoBehaviour
         };
     }
 
+    private static void CreateLobbyFloor()
+    {
+        GameObject floor = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        floor.tag = "RuntimeGenerated";
+        floor.name = "Lobby Floor";
+        floor.transform.localScale = new Vector3(22f, 0.25f, 18f);
+        floor.transform.position = new Vector3(0f, -0.125f, 3f);
+        floor.GetComponent<Renderer>().material.color = new Color(0.16f, 0.18f, 0.2f);
+
+        GameObject backWall = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        backWall.tag = "RuntimeGenerated";
+        backWall.name = "Lobby Door Wall";
+        backWall.transform.localScale = new Vector3(22f, 4f, 0.35f);
+        backWall.transform.position = new Vector3(0f, 2f, 9.25f);
+        backWall.GetComponent<Renderer>().material.color = new Color(0.11f, 0.12f, 0.13f);
+    }
+
+    private static void CreateThemeDoor(int themeNumber, bool unlocked, Vector3 position)
+    {
+        GameObject door = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        door.tag = "RuntimeGenerated";
+        door.name = $"Theme{themeNumber}Door";
+        door.transform.position = position;
+        door.transform.localScale = new Vector3(1.8f, 3f, 0.4f);
+        door.GetComponent<Renderer>().material.color = unlocked
+            ? new Color(0.1f, 0.55f, 0.75f)
+            : new Color(0.2f, 0.2f, 0.2f);
+
+        Collider collider = door.GetComponent<Collider>();
+        collider.isTrigger = true;
+        collider.enabled = unlocked;
+
+        LobbyThemeDoor themeDoor = door.AddComponent<LobbyThemeDoor>();
+        themeDoor.Configure(themeNumber, unlocked);
+
+        GameObject labelObject = new($"Theme{themeNumber}Label");
+        labelObject.tag = "RuntimeGenerated";
+        labelObject.transform.SetParent(door.transform);
+        labelObject.transform.localPosition = new Vector3(0f, 1.15f, -0.31f);
+        labelObject.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        TextMeshPro label = labelObject.AddComponent<TextMeshPro>();
+        label.text = unlocked ? $"Theme {themeNumber}" : $"Theme {themeNumber}\nLocked";
+        label.fontSize = 3.2f;
+        label.alignment = TextAlignmentOptions.Center;
+        label.color = unlocked ? Color.white : Color.gray;
+    }
+
     private static GameObject CreatePlayer()
     {
         GameObject player = new("Player");
@@ -520,6 +592,27 @@ public class RuntimeSceneBootstrap : MonoBehaviour
         CreateLabel(hud.transform, $"Room: {stageType} {StageProgress.Instance.CurrentRoom}/4");
         CreateLabel(hud.transform, $"Common Star: {GameSession.Instance.RunState.commonStars}");
         CreateLabel(hud.transform, $"Boss Star: {GameSession.Instance.RunState.bossStars}");
+    }
+
+    private static void BuildLobbyHud()
+    {
+        Canvas canvas = CreateCanvas("LobbyCanvas");
+        GameObject hud = new("LobbyHUD");
+        hud.tag = "RuntimeGenerated";
+        hud.transform.SetParent(canvas.transform, false);
+        RectTransform rect = hud.AddComponent<RectTransform>();
+        rect.anchorMin = new Vector2(0f, 1f);
+        rect.anchorMax = new Vector2(1f, 1f);
+        rect.pivot = new Vector2(0.5f, 1f);
+        rect.sizeDelta = new Vector2(0f, 92f);
+        HorizontalLayoutGroup layout = hud.AddComponent<HorizontalLayoutGroup>();
+        layout.padding = new RectOffset(18, 18, 18, 18);
+        layout.spacing = 24f;
+
+        SaveData save = GameSession.Instance.SaveData;
+        CreateLabel(hud.transform, $"Lobby");
+        CreateLabel(hud.transform, $"Character: {CharacterCatalog.GetDisplayName(save.selectedCharacter)}");
+        CreateLabel(hud.transform, $"Unlocked Themes: {string.Join(", ", save.unlockedThemes)}");
     }
 
     private static void BuildPausePanel()
